@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dragon.emanbonlist.dao.EmanListItemMapper">
+  <resultMap id="BaseResultMap" type="com.dragon.emanbonlist.pojo.EmanListItem">
+    <id column="modleNo" jdbcType="INTEGER" property="modleno" />
+    <result column="No" jdbcType="VARCHAR" property="no" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="materail" jdbcType="VARCHAR" property="materail" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="totelprice" jdbcType="DOUBLE" property="totelprice" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    modleNo, No, description, num, materail, remark, price, totelprice
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from eman_listitem
+    where modleNo = #{modleno,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from eman_listitem
+    where modleNo = #{modleno,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dragon.emanbonlist.pojo.EmanListItem">
+    insert into eman_listitem (modleNo, No, description, 
+      num, materail, remark, 
+      price, totelprice)
+    values (#{modleno,jdbcType=INTEGER}, #{no,jdbcType=VARCHAR}, #{description,jdbcType=VARCHAR}, 
+      #{num,jdbcType=INTEGER}, #{materail,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{price,jdbcType=DOUBLE}, #{totelprice,jdbcType=DOUBLE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dragon.emanbonlist.pojo.EmanListItem">
+    insert into eman_listitem
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="modleno != null">
+        modleNo,
+      </if>
+      <if test="no != null">
+        No,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="num != null">
+        num,
+      </if>
+      <if test="materail != null">
+        materail,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="totelprice != null">
+        totelprice,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="modleno != null">
+        #{modleno,jdbcType=INTEGER},
+      </if>
+      <if test="no != null">
+        #{no,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null">
+        #{num,jdbcType=INTEGER},
+      </if>
+      <if test="materail != null">
+        #{materail,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="totelprice != null">
+        #{totelprice,jdbcType=DOUBLE},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dragon.emanbonlist.pojo.EmanListItem">
+    update eman_listitem
+    <set>
+      <if test="no != null">
+        No = #{no,jdbcType=VARCHAR},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null">
+        num = #{num,jdbcType=INTEGER},
+      </if>
+      <if test="materail != null">
+        materail = #{materail,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="totelprice != null">
+        totelprice = #{totelprice,jdbcType=DOUBLE},
+      </if>
+    </set>
+    where modleNo = #{modleno,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dragon.emanbonlist.pojo.EmanListItem">
+    update eman_listitem
+    set No = #{no,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR},
+      num = #{num,jdbcType=INTEGER},
+      materail = #{materail,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      totelprice = #{totelprice,jdbcType=DOUBLE}
+    where modleNo = #{modleno,jdbcType=INTEGER}
+  </update>
+</mapper>

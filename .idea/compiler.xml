@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eman-gateway" />
+        <module name="eman-common" />
+        <module name="eman-porter" />
+        <module name="eman-feign" />
+        <module name="eman-eureka" />
+        <module name="eman-config" />
+        <module name="eman-bomlist" />
+        <module name="eman-purchase" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eman-bomlist" target="1.8" />
+      <module name="eman-common" target="1.8" />
+      <module name="eman-config" target="1.8" />
+      <module name="eman-eureka" target="1.8" />
+      <module name="eman-feign" target="1.8" />
+      <module name="eman-gateway" target="1.8" />
+      <module name="eman-porter" target="1.8" />
+      <module name="eman-purchase" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eman-bomlist" options="-parameters" />
+      <module name="eman-common" options="-parameters" />
+      <module name="eman-config" options="-parameters" />
+      <module name="eman-eureka" options="-parameters" />
+      <module name="eman-feign" options="-parameters" />
+      <module name="eman-gateway" options="-parameters" />
+      <module name="eman-porter" options="-parameters" />
+      <module name="eman-purchase" options="-parameters" />
+    </option>
+  </component>
+</project>

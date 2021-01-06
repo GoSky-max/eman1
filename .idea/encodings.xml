@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/eman-bomlist/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-config/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-porter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eman-purchase/src/main/java" charset="UTF-8" />
+  </component>
+</project>

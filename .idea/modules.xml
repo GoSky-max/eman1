@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/eman.iml" filepath="$PROJECT_DIR$/.idea/eman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-bomlist/eman-bomlist.iml" filepath="$PROJECT_DIR$/eman-bomlist/eman-bomlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-common/eman-common.iml" filepath="$PROJECT_DIR$/eman-common/eman-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-config/eman-config.iml" filepath="$PROJECT_DIR$/eman-config/eman-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-eureka/eman-eureka.iml" filepath="$PROJECT_DIR$/eman-eureka/eman-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-feign/eman-feign.iml" filepath="$PROJECT_DIR$/eman-feign/eman-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-gateway/eman-gateway.iml" filepath="$PROJECT_DIR$/eman-gateway/eman-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-porter/eman-porter.iml" filepath="$PROJECT_DIR$/eman-porter/eman-porter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eman-purchase/eman-purchase.iml" filepath="$PROJECT_DIR$/eman-purchase/eman-purchase.iml" />
+    </modules>
+  </component>
+</project>
